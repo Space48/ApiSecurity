@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="space48_apisecurity" translate="label" sortOrder="0" type="text" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Space48 API Security</label>
+            <tab>security</tab>
+            <resource>Space48_ApiSecurity::config</resource>
+            <group id="ip_authentication" translate="comment label" type="text" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>IP Authentication</label>
+                <comment>
+                    This module provides the capability to whitelist IP addresses.
+                    Only IP addresses in this whitelist will be able to create or use admin tokens via the Magento's REST or GraphQL APIs.
+                </comment>
+                <field id="enabled" type="select" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable IP Whitelisting</label>
+                    <comment>If enabled only the IPs below will be able to use services that use an admin token</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="whitelisted_ips" type="textarea" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Whitelisted IP Addresses</label>
+                    <comment>Enter each IP address on a new line</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
