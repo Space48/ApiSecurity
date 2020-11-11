@@ -1,10 +1,22 @@
 {
     "name": "space48/api-security",
     "description": "Magento 2 module that adds the ability to whitelist IP addresses for all requests that generate or use an OAuth admin token.",
+    "type": "magento2-module",
+    "license": [
+        "MIT"
+    ],
     "require": {
         "php": "^7.2",
         "magento/module-integration": "100.3.*",
         "magento/module-webapi": "100.3.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Space48\\ApiSecurity\\": ""
+        }
     }
 }
 

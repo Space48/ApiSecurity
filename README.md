@@ -6,7 +6,7 @@ More information about the Magento admin token can be found [here](https://devdo
 
 ## Requirements
 
-- PHP 7.1+
+- PHP 7.2+
 - Magento 2.3
 
 ## Usage
