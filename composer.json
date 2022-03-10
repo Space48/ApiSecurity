@@ -8,7 +8,7 @@
     "require": {
         "php": "^7.2",
         "magento/module-integration": "100.3.*",
-        "magento/module-webapi": "100.3.*"
+        "magento/module-webapi": "100.3.*|100.4.*"
     },
     "autoload": {
         "files": [
